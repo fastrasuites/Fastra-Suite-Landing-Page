@@ -1,0 +1,106 @@
+@media (max-width: 480px) {
+  .logo {
+    height: 34px; 
+    width: auto;
+  }
+  .navbar-nav .nav-link {
+    font-size: 17.5px;
+    margin-left: 10px;
+  }
+  .custom-navbar {
+    background-color: #fff;
+   width: 100%;
+  }
+  
+    .hero {
+        height: 55vh;
+    }
+    .hero-content {
+        width: 100%;
+        margin: 8px;
+      }
+    .hero h1 {
+        font-size: 32px;
+        padding-bottom: 28%;
+        margin: 10px;
+        line-height: 1.1;
+      }
+      .highlight-red {
+        left: 38%;
+        font-size: 1.5rem;
+      }
+      .hero p{
+        margin-top: -25% !important;
+        font-size: 14px;
+        padding: 20px;
+      }
+      .cta-button {
+        font-size: 1rem;
+        margin-top: -35%;
+      }
+      @keyframes btn-animate {
+        0% {padding: 0.5rem 3rem; box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;}
+        50% {padding: 0.5rem 1.5rem; box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; border-radius: 15px;}
+        100% {padding: 0.5rem 3rem; box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;}
+      }
+      .hero-image {
+        top: 95%;
+        width: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      .rating h2 {
+        font-size: 30px;
+        margin-top: 10%;
+      }
+      .card-box {
+        margin-top: -5%;
+        margin-bottom: -30px;
+      }
+      .featured-box{
+        margin-top: 180% !important;
+      }
+
+      .howItWorks h2 {
+        font-size: 30px;
+      }
+      .howItWorks p {
+        font-size: 18px;}
+        .operation-bg {
+          display: none;
+        }
+        .why-us h2{
+          font-size: 29px;
+        }
+        .why-us p{
+          font-size: 15px;
+          font-weight: 400;
+        }
+        .dashboard {
+          height: 60vh;
+        }
+        .dashboard img {
+          /* width: 100%;
+          height: auto;
+          right: 0; 
+          left: 0;
+          margin-bottom: 20%; */
+          display: none;
+        }
+        .dashboard .display-4{
+          font-weight: 700;
+          font-size: 27px;
+          padding-bottom: 10px;
+        }
+        .dashboard .btn{
+          padding: 12px;
+          width: 80%;
+        }
+        .copyright {
+          float: left;
+           font-weight: 400;
+        }
+        footer h5 {
+          margin-top: 20px;
+        }
+}
