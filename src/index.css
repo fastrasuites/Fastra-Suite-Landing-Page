@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 :root {
   font-family: "PT Sans", sans-serif;
   line-height: 1.5;
@@ -7,6 +10,10 @@
   color: #242424;
   background-color: #F3F3F3;
 
+}
+
+*{
+  font-family: ;
 }
 .custom-navbar {
   background-color: #fff;
@@ -324,4 +331,98 @@ footer .social-icons .fa {
 .copyright {
   float: right;
    font-weight: 400;
+}
+
+.pop {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 10;
+  top: 9rem;
+  animation: pop-up-animation 0.4s ease-in-out forwards;
+}
+.hidden {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 10;
+  top: 9rem;
+  animation: bounce-down 0.4s ease-in forwards;
+}
+.gridPopUp {
+  width: 85%;
+  background: #fff;
+  min-height: 75vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+gap: 3rem;
+  padding: 6rem 10rem;
+
+}
+
+.gridPopUp a {
+  text-decoration: none;
+}
+
+.gridPopUp .box,
+.gridPopUp .box1 {
+  display: flex;
+  background: #F7F7F7;
+  border-radius: 0.625rem;
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+
+.gridPopUp .box1 {
+  background: #F9F9F9;
+  cursor: pointer;
+}
+
+.box svg {
+  color: rgb(190, 189, 189);
+}
+.box div h4,
+.box1 div h4 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: rgb(190, 189, 189);
+}
+
+.box div span,
+.box1 div span {
+  color: rgb(190, 189, 189);
+  font-size: 1rem;
+}
+
+.box1 div h4 {
+  color: #353535;
+}
+
+/* animation for popup */
+
+@keyframes pop-up-animation {
+  0%{
+    transform: translateY(100%) ;
+    opacity: 0
+  }
+ 
+  100%{
+    transform: translateY(0) ;
+    opacity: 1
+  }
+  
+}
+@keyframes bounce-down{
+  0%{
+    transform: translateY(0) ;
+    opacity: 1
+  }
+ 
+  100%{
+    transform: translateY(100%) ;
+    opacity: 0
+  }
+  
 }
