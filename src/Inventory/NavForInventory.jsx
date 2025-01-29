@@ -1,9 +1,12 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, {useState} from 'react';
+import { Link, useSubmit } from 'react-router-dom';
 import './invent.css';
 
 
-const NavForInventory = ({ links })  => {
+const NavForInventory = ()  => {
+    const [rotate, setRotate] = useState(false)
+
+
   return (
     <nav className="inventoryheader">
         <div className="logo">
@@ -18,11 +21,18 @@ const NavForInventory = ({ links })  => {
             <span>Management</span></div>
         </div>
         <ul className="links">
-            {links.map((item, index) => (
-                <li key={index}>
-                    <Link to={item.link} className="nav-text">{item.text}</Link>
+                <li className="nav-text">
+                    <span>
+                    Features {rotate ? (<i className='bx bx-chevron-up' onClick={() => setRotate(prevState => !prevState)}  style={{fontSize: '1.6rem', }} ></i>) : 
+                        (<i className='bx bx-chevron-down' onClick={() => setRotate(prevState => !prevState)}  style={{fontSize: '1.6rem', }} ></i>)}
+                    </span>
+                    <ul className={`innerLi ${rotate ? 'show' : ''}`}>
+                        <li>feature 1</li>
+                        <li>feature 2</li>
+                        <li>feature 3</li>
+                        <li>feature 4</li>
+                    </ul>
                 </li>
-            ))}
         </ul>
 
     </nav>

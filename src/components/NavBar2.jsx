@@ -11,8 +11,8 @@ const NavBar = ({ links })  => {
   return (
     <nav className="NavBar">
 
-        <div className="navBarsect1">
-            <img src={logo} alt="company-logo" />
+        <div className="navBarsect1" style={{display: 'flex', alignItems: 'center'}}>
+            <Link to="/"><img style={{width: '100%'}} src={logo} alt="company-logo" /></Link>
        
         <ul className="links2">
             <li>Product 
@@ -28,7 +28,7 @@ const NavBar = ({ links })  => {
         </div>
         <div className="btns">
             <button className="btn1"><Link>Sign In</Link></button>
-            <button className="btn2"><Link>Sign Up</Link></button>
+            <button className="btn2"><Link to="https://app.fastrasuite.com/">Sign Up</Link></button>
         </div>
 
     </nav>

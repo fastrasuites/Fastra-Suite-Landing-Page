@@ -14,7 +14,7 @@ const CustomerRating = () => {
   ];
 
   return (
-    <Container className="text-center my-5 rating" id='customer'>
+    <Container className="text-center rating" id='customer'>
       <h2>Customers have consistently rated
       <br />Around 4.7/5 stars</h2>
       <Row>

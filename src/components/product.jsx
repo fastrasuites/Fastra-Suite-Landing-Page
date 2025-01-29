@@ -76,7 +76,7 @@ const ProductPopup = ({rotate, setRotate}) => {
                     <div>
                         {hoveredIndex === 1 ?
                         (
-                            <h2 style={{ fontSize: "24px", color: '#7E2218'  }}>Coming Soon</h2>
+                            <h2>Coming Soon</h2>
                         ) : (
                         <>
                            <h4>
@@ -129,7 +129,7 @@ const ProductPopup = ({rotate, setRotate}) => {
                     <div>
                     {hoveredIndex === 2 ? (
                     // Content when hovered
-                    <h2 style={{ fontSize: "24px", color: "#7E2218" }}>Coming Soon</h2>
+                    <h2>Coming Soon</h2>
                  )       :
                     (
                         <>
@@ -159,7 +159,7 @@ const ProductPopup = ({rotate, setRotate}) => {
                     <div>
                     {hoveredIndex === 3 ? (
                     // Content when hovered
-                    <h2 style={{ fontSize: "24px", color: "#7E2218" }}>Coming Soon</h2>
+                    <h2>Coming Soon</h2>
                     ) : 
                     (
                     <>
@@ -192,7 +192,7 @@ const ProductPopup = ({rotate, setRotate}) => {
                     <div>
                     {hoveredIndex === 4 ? 
                     (
-                        <h2 style={{ fontSize: "24px", color: "#7E2218" }}>Coming Soon</h2>
+                        <h2>Coming Soon</h2>
                     ):
                     (<>
                         <h4>

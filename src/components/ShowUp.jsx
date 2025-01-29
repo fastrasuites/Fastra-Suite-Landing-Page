@@ -161,7 +161,7 @@ const PopUp = ({setShowPopUp, showPopUp}) => {
                         <h4>
                         HRM
                         </h4>
-                        <span></span>
+                        <span>People-focused, talent-driven, and strategic.</span>
                     </div>
                     <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.625 13.75C20.625 13.75 34.375 23.8766 34.375 27.5C34.375 31.1236 20.625 41.25 20.625 41.25" stroke="currentColor" stroke-width="3.4375" stroke-linecap="round" stroke-linejoin="round"/>

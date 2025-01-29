@@ -9,11 +9,13 @@ html {
   color-scheme: light dark;
   color: #242424;
   background-color: #F3F3F3;
-
+   text-decoration: none;
 }
 
 *{
-  font-family: ;
+  font-family: "PT Sans", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 .custom-navbar {
   background-color: #fff;
@@ -400,6 +402,9 @@ gap: 3rem;
   color: #353535;
 }
 
+#customer {
+  margin-top: 2rem;
+}
 /* animation for popup */
 
 @keyframes pop-up-animation {
@@ -425,4 +430,50 @@ gap: 3rem;
     opacity: 0
   }
   
+}
+
+
+@media screen and (max-width: 1366px){ 
+
+  .productPop {
+    width: 50%;
+    background: #fff;
+    padding: 2rem 1.5rem;
+    padding-right: 2rem;
+    row-gap: 1.7rem;
+    column-gap: 3rem;
+    box-shadow: 0 2px 23px rgba(0,0,0, 0.2);
+}
+
+.productPop .box2 div h2 {
+  font-size: 1.2rem;
+}
+.gridPopUp {
+  width: 85%;
+  background: #fff;
+  min-height: 75vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  padding: 4rem 6rem;
+}
+
+.hero2 {
+  height: 85vh;
+}
+.inventWhyUs .whyusPt1 {
+  padding: 8rem 6rem 8rem 6rem;
+}
+.inventWhyUs .whyusPt1 h1 {
+  font-size: 2.9rem;
+  font-weight: 700;
+  line-height: 3.8rem;
+}
+.box div h4, .box1 div h4 {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+#customer {
+  margin-top: 8rem;
+}
 }

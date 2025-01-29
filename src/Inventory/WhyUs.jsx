@@ -1,14 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const WhyUs = () => {
     return (
         <div className="inventWhyUs" style={{paddingTop: '3rem'}}>
 
             <section className="whyusPt1">
-                <h1 style={{ color: '#293241', fontSize: '2.9rem', fontWeight: '700', lineHeight: '3.8rem'}}>Prevents overstocking or stockouts, ensuring smooth operations.</h1>
+                <h1>Prevents overstocking or stockouts, ensuring smooth operations.</h1>
                 <p style={{color: '#7F848D', fontSize: '1.4rem', textAlign: 'left'}}>Inventory management helps maintain optimal <br /> stock levels by accurately forecasting demand and <br /> tracking inventory. This prevents excess stock that <br />ties up capital or stock shortages that disrupt <br /> operations and sales.</p>
                 <button style={{marginLeft: '1rem', outline: 'none',borderRadius: '0.2rem', border: 'none',marginTop: '2rem', fontSize: '1.2rem',color: '#FFFFFF',textAlign: 'center', background: '#E43D2B', padding: '0.7rem 5rem'}}>
-                    Sign up for free
+                    <Link style={{textDecoration: 'none', color: '#FFFFFF'}} to="https://app.fastrasuite.com/">Sign up for free</Link>
                 </button>
             </section>
             <section className="whyusPt2">

@@ -138,6 +138,13 @@ border-radius: 0.5rem;
     background: #3B7DED;
     padding: 10rem 4rem 10rem 7rem;
 }
+
+.inventWhyUs .whyusPt1 h1 {
+    color: #293241;
+    font-size: 3.2rem; 
+    font-weight: 700;
+     line-height: 3.8rem;
+}
 .inventWhyUs .whyusPt2 span{
     margin-bottom: 2rem;
     padding: 0.5rem;
@@ -175,12 +182,48 @@ border-radius: 0.5rem;
 .NavBar {
     width: 100%;
     display: flex;
-    padding: 1rem 8rem;
+    padding: 0.8rem 8rem;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
+.nav-text {
+    color: #F4F5F7;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.nav-text span {
+    display: flex;
+    align-items: center;
+}
+.nav-text ul {
 
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    background: inherit;
+    padding: 0;
+    padding: 1rem ;
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    z-index: 5;
+}
+.nav-text ul.show {
+    display: flex;
+}
+
+.nav-text ul li {
+    color: blue;
+    width: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 2px solid grey;
+    padding: 1rem 0rem;
+}
 .NavBar .navBarsect1 {
     display: flex;
 }
@@ -242,10 +285,10 @@ border-radius: 0.5rem;
     z-index: 12;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 3.6rem 1.5rem ;
-    padding-right: 3rem;
+    padding: 3rem 1.5rem ;
+    padding-right: 2.5rem;
     row-gap: 2rem;
-    column-gap: 4rem;
+    column-gap: 3rem;
     box-shadow: 0 2px 23px rgba(0,0,0, 0.2);
 
 
@@ -278,8 +321,6 @@ border-radius: 0.5rem;
     font-size: 1rem;
     font-weight: 400;
     color: #353535;
-    line-height: 0.1rem;
-    letter-spacing: -1px;
 }
 
 .productPop .box2  h4 i {
@@ -313,4 +354,10 @@ border-radius: 0.5rem;
     border-left: 1rem solid transparent;
     border-right: 1rem solid transparent;
     border-bottom: 2rem solid #fff;
+  }
+
+  .productPop .box2 div h2 {
+    font-size: 1.2rem;
+    color: #7E2218;
+    font-weight: 600;
   }

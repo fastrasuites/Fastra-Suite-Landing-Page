@@ -1,15 +1,9 @@
 import React from 'react';
+import {Link } from 'react-router-dom'
 import backgroundImg from '../assets/HeroBg.png';
 import NavForInventory from './NavForInventory';
 import './invent.css'
 import Card from './card';
-
-const links = [
-  { link: '/features', text: 'Features' },
-  { link: '/pricing', text: 'Pricing' },
-  { link: '/customers', text: 'Customers' },
-  { link: '/resources', text: 'Resources' },
-];
 
 
 const HeroSection = () => {
@@ -22,15 +16,21 @@ const HeroSection = () => {
         backgroundColor: '#3C3939',
         backgroundBlendMode: 'overlay',
         width: '100%',
-    marginBottom:  '15rem'
+    marginBottom:  '18rem'
       }}
     >
-      <NavForInventory  links={links} />
-      <h1 style={{marginTop: '5rem',color: '#F4F5F7', fontSize: '3rem', width: '70%', textAlign: 'center'}}>
+      <NavForInventory  />
+      <h1 style={{marginTop: '4rem',color: '#F4F5F7', fontSize: '3rem', width: '70%', textAlign: 'center', fontWeight: '700'}}>
         STREAMLINE YOUR INVENTORY WITH <br /> THE ALL-IN-ONE INVENTORY <br />MANAGEMENT SOFTWARE!
         </h1>
+        <div style={{width: '45%', display: 'flex', justifyContent: 'right' }}>
+        <svg width="316" height="24" viewBox="0 0 316 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 4.94324C78.6831 4.58666 156.238 3.58717 233.72 2.21108C304.091 0.961303 249.422 1.98123 283.562 1.02715C290.519 0.83271 269.815 1.72686 263.242 2.30216C222.035 5.90833 185.908 11.345 148.99 16.8737C128.682 19.915 111.915 21.5403 88.0305 21.9737C67.3717 22.3486 7.85544 22.9325 71.1612 22.9755C152.439 23.0306 233.721 22.9755 315 22.9755" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+
+        </div>
         <button style={{outline: 'none',borderRadius: '0.2rem', border: 'none',marginTop: '2rem', fontSize: '1.2rem',color: '#FFFFFF',textAlign: 'center', background: '#E43D2B', padding: '0.7rem 5rem'}}>
-            Sign up for free
+            <Link style={{textDecoration: 'none', color: '#FFFFFF'}} to="https://app.fastrasuite.com/">Sign up for free</Link>
         </button>
         <div className="cardBox">
             <Card svgImage={
