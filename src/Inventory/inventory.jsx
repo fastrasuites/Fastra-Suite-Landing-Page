@@ -21,7 +21,6 @@ const links = [
 const Inventory = () => {
 
 
-
     return (
        <div>
         <NavBar />
