@@ -20,17 +20,18 @@ const NavForInventory = ()  => {
             <span>Inventory</span>
             <span>Management</span></div>
         </div>
-        <ul className="links">
+        <ul className={`links ${rotate ? 'show2': ''}`}>
                 <li className="nav-text">
-                    <span>
-                    Features {rotate ? (<i className='bx bx-chevron-up' onClick={() => setRotate(prevState => !prevState)}  style={{fontSize: '1.6rem', }} ></i>) : 
-                        (<i className='bx bx-chevron-down' onClick={() => setRotate(prevState => !prevState)}  style={{fontSize: '1.6rem', }} ></i>)}
+                    <span className={`${rotate ? 'show3': ''}`}>
+                    Features {rotate ? (<i className='bx bx-chevron-up' onClick={() => setRotate(prevState => !prevState)}   ></i>) : 
+                        (<i className='bx bx-chevron-down' onClick={() => setRotate(prevState => !prevState)} ></i>)}
                     </span>
                     <ul className={`innerLi ${rotate ? 'show' : ''}`}>
-                        <li>feature 1</li>
-                        <li>feature 2</li>
-                        <li>feature 3</li>
-                        <li>feature 4</li>
+                        <li>Delivery Management</li>
+                        <li>Purchase Tracking</li>
+                        <li>Stock Level Tracking</li>
+                        <li>Material Consumption Tracking</li>
+                        <li>Multi-Location Storekeeping</li>
                     </ul>
                 </li>
         </ul>

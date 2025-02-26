@@ -23,7 +23,7 @@ const NavBar = ({ links })  => {
            </li>
             <li><Link to='#customer'>Customer</Link></li>
             <li><Link to='#company'>Company</Link></li>
-            <li><Link to='#pricing'>Pricing</Link></li>
+            {/*<li><Link to='#pricing'>Pricing</Link></li>*/}
         </ul>
         </div>
         <div className="btns">

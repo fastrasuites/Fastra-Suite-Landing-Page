@@ -32,7 +32,7 @@ const HeroSection = () => {
         <button style={{outline: 'none',borderRadius: '0.2rem', border: 'none',marginTop: '2rem', fontSize: '1.2rem',color: '#FFFFFF',textAlign: 'center', background: '#E43D2B', padding: '0.7rem 5rem'}}>
             <Link style={{textDecoration: 'none', color: '#FFFFFF'}} to="https://app.fastrasuite.com/">Sign up for free</Link>
         </button>
-        <div className="cardBox">
+          <div className="cardBox">
             <Card svgImage={
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M31.7917 31.7917L36.6667 36.6667M21.5 24.75H28M34.5 24.75C34.5 19.3652 30.1348 15 24.75 15C19.3652 15 15 19.3652 15 24.75C15 30.1348 19.3652 34.5 24.75 34.5C30.1348 34.5 34.5 30.1348 34.5 24.75Z" stroke="#293241" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>

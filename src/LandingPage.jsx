@@ -33,7 +33,7 @@ function LandingPage() {
       <Featured />
       <section style={{ backgroundColor: '#3B7DED', padding: '20px'}}>
         <WhyUs /></section>
-      <Pricing />
+      {/*<Pricing /> */}
       <Dashboard />
       <Footer />  
       

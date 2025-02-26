@@ -25,6 +25,7 @@ const Inventory = () => {
        <div>
         <NavBar />
         <HeroSection />
+        
         <WhyUs />
         <Pricing />
         <Dashboard />
