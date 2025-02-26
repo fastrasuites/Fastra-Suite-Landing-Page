@@ -21,11 +21,11 @@ const links = [
 const Inventory = () => {
 
 
-
     return (
        <div>
         <NavBar />
         <HeroSection />
+        
         <WhyUs />
         <Pricing />
         <Dashboard />

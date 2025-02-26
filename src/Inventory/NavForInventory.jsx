@@ -1,9 +1,12 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, {useState} from 'react';
+import { Link, useSubmit } from 'react-router-dom';
 import './invent.css';
 
 
-const NavForInventory = ({ links })  => {
+const NavForInventory = ()  => {
+    const [rotate, setRotate] = useState(false)
+
+
   return (
     <nav className="inventoryheader">
         <div className="logo">
@@ -17,12 +20,20 @@ const NavForInventory = ({ links })  => {
             <span>Inventory</span>
             <span>Management</span></div>
         </div>
-        <ul className="links">
-            {links.map((item, index) => (
-                <li key={index}>
-                    <Link to={item.link} className="nav-text">{item.text}</Link>
+        <ul className={`links ${rotate ? 'show2': ''}`}>
+                <li className="nav-text">
+                    <span className={`${rotate ? 'show3': ''}`}>
+                    Features {rotate ? (<i className='bx bx-chevron-up' onClick={() => setRotate(prevState => !prevState)}   ></i>) : 
+                        (<i className='bx bx-chevron-down' onClick={() => setRotate(prevState => !prevState)} ></i>)}
+                    </span>
+                    <ul className={`innerLi ${rotate ? 'show' : ''}`}>
+                        <li>Delivery Management</li>
+                        <li>Purchase Tracking</li>
+                        <li>Stock Level Tracking</li>
+                        <li>Material Consumption Tracking</li>
+                        <li>Multi-Location Storekeeping</li>
+                    </ul>
                 </li>
-            ))}
         </ul>
 
     </nav>
