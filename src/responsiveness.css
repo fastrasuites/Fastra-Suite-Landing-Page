@@ -57,8 +57,26 @@
         margin-top: -5%;
         margin-bottom: -30px;
       }
-      .featured-box{
+      /* .featured-box{
         margin-top: 180% !important;
+      } */
+
+      .d-flex1{
+        display: none !important;
+        margin-top: 20px;
+      }
+
+      .d-flex-Why {
+        display: none;
+      }
+
+      .customerimg img {
+        display: none;
+      }
+
+      .d-flex-robust {
+        padding-left: 31px;
+        padding-right: 28px;
       }
 
       .howItWorks h2 {
@@ -69,6 +87,11 @@
         .operation-bg {
           display: none;
         }
+
+        .howItWorksCard {
+          display: flex;
+          flex-direction: column;
+        }
         .why-us h2{
           font-size: 29px;
         }
@@ -77,7 +100,7 @@
           font-weight: 400;
         }
         .dashboard {
-          height: 60vh;
+          height: 40vh;
         }
         .dashboard img {
           /* width: 100%;

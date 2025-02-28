@@ -10,6 +10,15 @@
     align-items: center;
 }
 
+/* .hero2 h1 {
+    margin-top: 4rem;
+    color: #f4f5f7;
+    font-size: 3rem;
+    width: 70%;
+    text-align: center;
+    font-weight: 700;
+} */
+
 /* inventory Navbar section */
 .inventoryheader{
     margin-top: 3rem;
@@ -118,6 +127,10 @@
     position: relative;
     justify-content: space-between;
     margin-top: 2rem;
+  }
+
+  .cardContainer {
+    display: none;
   }
   .bg {
     background: #fff;
@@ -248,7 +261,7 @@ header {
    
 }
 
-.bx {
+.bx-menu {
     display: none;
 }
 .nav-text {
@@ -341,17 +354,20 @@ header .navBarsect1  .links2  li a {
 
 
 }
+.productPop a {
+    width: 100%;
+}
 .productPop .box2 {
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     cursor: pointer;
 }
-
+.productPop a .box2 div,
 .productPop .box2 div {
     margin-left: 2rem;
 }
 
-
+.productPop a .box2 div h4,
 .productPop .box2 div h4 {
     display: flex;
     justify-content: space-between;
@@ -458,3 +474,126 @@ header .navBarsect1  .links2  li a {
         display: flex;
     }
   }
+
+  @media screen and (max-width: 481px) {
+    .inventoryheader .links {
+       display: none;
+   }
+
+   .logo {
+       width: 35.83px;
+       height: 17.5px;
+       margin-right: 0.5rem;
+   }
+
+   .navbar-text {
+       font-size: 1rem;
+   }
+
+
+   .hero2 {
+       height: 60vh;
+       margin-bottom: 3rem;
+   }
+  
+   .cardContainer {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin-top: 20px;
+   }
+
+   .hero2 h1 {
+    font-size: 32px;
+   }
+   .cardBox {
+       display: none;
+       flex-direction: column;
+       align-items: center;
+   }
+   .bg, .bg2 {
+       width: 80%;
+   }
+   .bg2 {
+       margin-top: 2rem;
+   }
+   .inventWhyUs {
+       flex-direction: column;
+       align-items: left;
+   }
+   .inventWhyUs .whyusPt1 {
+       width: 100%;
+       padding: 1.5rem 2rem;
+       align-items: left;
+   }
+
+   .inventWhyUs .whyusPt1 h1 {
+       font-size: 28px;
+       font-weight: 900;
+       line-height: 36.4px;
+       margin-bottom: 2rem;
+   }
+
+   .inventWhyUs .whyusPt1 p {
+       font-size: 20px !important;
+   }
+   .inventWhyUs .whyusPt2 {
+       width: 100%;
+       padding: 5rem 2rem;
+       align-items: left;
+       font-size: 24px;
+   }
+   .inventWhyUs .whyusPt2 span {
+       margin-bottom: 2rem;
+       padding: 0.5rem;
+       border-radius: 0.5rem;
+       font-weight: 700;
+   }
+   .inventWhyUs .whyusPt2 h2 {
+       margin-bottom: 4rem;
+       font-size: 24px !important;
+   }
+   .inventWhyUs ul {
+       list-style: none;
+       display: flex;
+       flex-direction: column;
+       justify-content: left;
+       padding-left: 0;
+   }
+   .inventWhyUs ul li {
+       color: #D4D6D9;
+       font-size: 1.125rem;
+       text-align: left;
+       display: flex;
+       align-items: center;
+       /* line-height: 3rem; */
+       font-weight: 500;
+   }
+   .inventWhyUs ul li svg {
+       margin-right: 1rem;
+   }
+   .NavBar .navBarsect1 ul li a {
+       font-size: 0.935rem;
+   }
+
+   .productPop {
+       width: 100%;
+       padding: 3.6rem 1.5rem;
+       padding-right: 3rem;
+       row-gap: 2rem;
+       column-gap: 4rem;
+   }
+   .productPop .box2 {
+       display: flex;
+       justify-content: left;
+       cursor: pointer;
+   }
+   .productPop .box2 div {
+       margin-left: 2rem;
+   }
+   .footer-stuff {
+       display: flex;
+       flex-direction: column;
+   }
+
+}

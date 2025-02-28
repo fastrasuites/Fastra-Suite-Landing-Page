@@ -12,6 +12,7 @@ import Pricing from './components/Pricing';
 import Dashboard from './components/Dashboard';
 import PopUp from './components/ShowUp';
 import NavBar from './components/NavBar2';
+import HowItWorksCard from './components/HowItWorksCard';
 
 const links = [
   { href: '#product', text: 'Product' },
@@ -29,7 +30,8 @@ function LandingPage() {
       <Hero setShowPopUp={setShowPopUp}/>
       <PopUp setShowPopUp={setShowPopUp} showPopUp={showPopUp}/>
       <CustomerRating />
-      <HowItWorks />
+      {/* <HowItWorks /> */}
+      <HowItWorksCard />
       <Featured />
       <section style={{ backgroundColor: '#3B7DED', padding: '20px'}}>
         <WhyUs /></section>
