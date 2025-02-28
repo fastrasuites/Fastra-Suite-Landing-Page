@@ -10,6 +10,7 @@ html {
   color: #242424;
   background-color: #F3F3F3;
    text-decoration: none;
+
 }
 
 *{
@@ -22,6 +23,13 @@ html {
 body {
   width: 100%;
 }
+
+body{
+  width: 100vw;
+  position:relative;
+  overflow-x: hidden;
+}
+
 .custom-navbar {
   background-color: #fff;
   border-bottom: 1px solid #e0e0e0;
@@ -580,9 +588,8 @@ gap: 3rem;
 #customer {
   margin-top: 8rem;
 }
-
-
 }
+
 
 @media screen and (max-width: 481px) { 
 

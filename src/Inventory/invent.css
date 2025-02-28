@@ -252,13 +252,17 @@ border-radius: 0.5rem;
 
 /* main nav bar */
 
-.NavBar {
-    width: 100vw;
+header {
+    width: 100%;
     display: flex;
     padding: 0.8rem 8rem;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+   
+}
+
+.bx-menu {
+    display: none;
 }
 .nav-text {
     color: #F4F5F7;
@@ -273,39 +277,43 @@ border-radius: 0.5rem;
     align-items: center;
 }
 
-.NavBar .navBarsect1 {
+header .navBarsect1 {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    width: 85%;
 }
- .NavBar .navBarsect1  ul{
+header a {
+    width: 15%;
+}
+header a img {
+    width: 100%;
+}
+header .navBarsect1  .links2 {
 
     display: flex;
     list-style: none;
 }
-.NavBar .navBarsect1  ul  li {
+header .navBarsect1  .links2  li {
     padding: 1rem;
     display: flex;
     align-items: center;
 }
 
-.NavBar .navBarsect1  ul  li a {
+header .navBarsect1  .links2  li a {
     text-decoration: none;
     font-size: 0.935rem;
     color: #4F4F4F;
 }
 
-.btns {
+.btns-nav {
     display: flex;
     gap: 1rem;
     align-items: center;
 
 }
-.btns .links3 {
-    display: none;
-}
 
-.btns .btn1 ,
-.btns .btn2 {
+.btns-nav .btn1 ,
+.btns-nav .btn2 {
     background: #fff;
     outline: none;
     border: 1px solid #4F4F4F;
@@ -313,17 +321,17 @@ border-radius: 0.5rem;
     border-radius: 1rem;
     padding: 0.5rem 2.3rem;
 }
-.btns .btn1 a,
-.btns .btn2 a {
+.btns-nav .btn1 a,
+.btns-nav .btn2 a {
     text-decoration: none;
     color: #333333;
 }
-.btns .btn2  {
+.btns-nav .btn2  {
  background: #4F4F4F;
  border: none;
 }
 
-.btns .btn2 a {
+.btns-nav .btn2 a {
     color: #EAE9E9;
 }
 
@@ -346,17 +354,20 @@ border-radius: 0.5rem;
 
 
 }
+.productPop a {
+    width: 100%;
+}
 .productPop .box2 {
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     cursor: pointer;
 }
-
+.productPop a .box2 div,
 .productPop .box2 div {
     margin-left: 2rem;
 }
 
-
+.productPop a .box2 div h4,
 .productPop .box2 div h4 {
     display: flex;
     justify-content: space-between;
@@ -415,6 +426,55 @@ border-radius: 0.5rem;
     font-weight: 600;
   }
 
+  @media screen and (max-width: 490px) {
+    header {
+      padding: 1rem 2rem;
+      position: relative;
+      top: 0;
+      z-index: 20;
+    }
+    header .navBarsect1 {
+        position: absolute;
+        width: 60vw;
+        flex-direction: column;
+        background: #fff;
+        height: 50vh;
+        top: 100%;
+        right: -100%;
+        padding: 1rem 1rem;
+        z-index: 1000;
+        transition: 0.5s ease;
+    }
+    header .navBarsect1.active {
+        right: 0%;
+    }
+    header .navBarsect1  .links2{
+        flex-direction: column;
+
+    }
+    header a {
+        width: 20%;
+    }
+    header a  img {
+        width: 100%;
+    }
+  
+    .btns-nav {
+       flex-direction: column;
+        gap: 0rem;
+    }
+    .btns-nav .btn1, .btns-nav .btn2 {
+        font-size: 0.9rem;
+        border-radius: 1rem;
+        padding: 0.5rem 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .bx {
+        display: flex;
+    }
+  }
+
   @media screen and (max-width: 481px) {
     .inventoryheader .links {
        display: none;
@@ -430,10 +490,6 @@ border-radius: 0.5rem;
        font-size: 1rem;
    }
 
-   .navBarsect1 img {
-       width: 115px;
-       height: 40px;
-   }
 
    .hero2 {
        height: 60vh;
@@ -520,14 +576,6 @@ border-radius: 0.5rem;
        font-size: 0.935rem;
    }
 
-
-   .NavBar .navBarsect1  ul {
-    display: none
-   }
-
-
-
-
    .productPop {
        width: 100%;
        padding: 3.6rem 1.5rem;
@@ -548,35 +596,4 @@ border-radius: 0.5rem;
        flex-direction: column;
    }
 
-   .NavBar {
-    padding: 0.8rem 2rem;
-    position: relative;
-}
-
-.NavBar .navBarsect1 {
-    width: 100%;
-    justify-content: space-between;
-}
-.NavBar .btns {
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    align-items: flex-start;
-    width: 70vw;
-    height: 40vh;
-    position: fixed;
-    right: 13%;
-    top: 4%;
-    z-index: 10;
-    gap: 0;
-    }
-
-    .btns.active {
-        right: 95vw;
-    }
-
-    .btns .links3 {
-        display: flex;
-        flex-direction: column;
-    }
 }

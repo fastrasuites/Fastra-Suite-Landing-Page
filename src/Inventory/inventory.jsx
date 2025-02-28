@@ -23,7 +23,7 @@ const Inventory = () => {
 
 
     return (
-       <div>
+       <div style={{width: "100%"}}>
         <NavBar />
         <HeroSection />
         <div className="cardContainer">
