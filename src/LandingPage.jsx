@@ -24,7 +24,7 @@ function LandingPage() {
 
     const [showPopUp, setShowPopUp] = useState(false);
   return (
-    <>
+    <div style={{width: '100%'}}> 
       <NavBar />
       <Hero setShowPopUp={setShowPopUp}/>
       <PopUp setShowPopUp={setShowPopUp} showPopUp={showPopUp}/>
@@ -38,7 +38,7 @@ function LandingPage() {
       <Footer />  
       
 
-    </>
+    </div>
   );
 }
 
