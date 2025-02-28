@@ -16,6 +16,11 @@ html {
   font-family: "PT Sans", sans-serif;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
 }
 .custom-navbar {
   background-color: #fff;
@@ -192,6 +197,103 @@ html {
   background-size: cover;
   background-position: center;
 }
+
+.howItWorks {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* .howItWorks p {
+  margin-bottom: 120px;
+} */
+
+.howItWorksCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 5%;
+  gap: 13px;
+  min-height: 70vh;
+  width: 100%;
+}
+
+.howItWorksCard .demo h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  font-weight: 900;
+  color: #FFFFFF;
+}
+
+.howItWorksCard .demo p {
+  font-size: 16px;
+  /* margin-bottom: 1.2rem; */
+  font-weight: 400;
+  color: #D4D6D9;
+
+}
+
+.demo {
+  
+  width: 24%;
+  height: 270px;
+  
+  border-radius: 18px;
+  padding: 34px 24px;
+  position: relative;
+  z-index: 10;
+}
+.demo2 {
+  background-color: #E43E2B;
+}
+.demo svg {
+  position: absolute;
+  left: 0%;
+  top: 0%
+}
+.customize::after,
+.demo2::after {
+  content: "";
+  position: absolute;
+  bottom: -25.8%;
+  left: 50%;
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.subscribe {
+  background-color: #3B7DED;
+  position: relative;
+
+
+}
+.subscribe::before {
+  content: "";
+  position: absolute;
+  top: -25.8%;
+  left: 50%;
+  width: 100%;
+  height: 70px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+.customize {
+  background-color: #4F4F4F;
+}
+
+.access {
+  background-color: #2BA24C;
+
+}
 .why-us h2 {
   font-size: 40px;
   color: #fff;
@@ -255,7 +357,9 @@ html {
   background: linear-gradient(#09285D, #020A17);
   height: 70vh;
   border-radius: 28px;
+  margin-top: 100px;
   margin-bottom: 100px;
+
 }
 
 .dashboard img {
@@ -461,19 +565,56 @@ gap: 3rem;
 .hero2 {
   height: 85vh;
 }
-.inventWhyUs .whyusPt1 {
+/* .inventWhyUs .whyusPt1 {
   padding: 8rem 6rem 8rem 6rem;
-}
-.inventWhyUs .whyusPt1 h1 {
+} */
+/* .inventWhyUs .whyusPt1 h1 {
   font-size: 2.9rem;
   font-weight: 700;
   line-height: 3.8rem;
-}
+} */
 .box div h4, .box1 div h4 {
   font-weight: 700;
   font-size: 1.2rem;
 }
 #customer {
   margin-top: 8rem;
+}
+
+
+}
+
+@media screen and (max-width: 481px) { 
+
+  .howItWorksCard {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 5%;
+    gap: 13px;
+    align-items: flex-start;;
+}
+
+.demo {
+  width: 70%;
+}
+.access,
+.subscribe {
+  margin-left: 20%;
+}
+
+.customize::after, .demo2::after {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 100%;
+  width: 10%;
+  height: 200px;
+  border-bottom: 0px solid black;
+  border-left: 0px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  transition: background-color 0.3s ease-in-out;
 }
 }
