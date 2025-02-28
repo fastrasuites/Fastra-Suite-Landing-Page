@@ -1,22 +1,21 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import googleLogo from '../assets/google.png';
-import amazonLogo from '../assets/amazon.png';
-import spotifyLogo from '../assets/spotify.png';
+import bclLogo from '../assets/bcl-logo.png';
+import almLogo from '../assets/alm-logo.png';
+import tscLogo from '../assets/tsc-logo.png';
 
 
 const CustomerRating = () => {
   const reviews = [
-    { company: 'Google', logo: googleLogo, rating: 5, review: 'Maecenas convallis non sapien in commodo. Nulla semper pulvinar luctus. Proin luctus.' },
-    { company: 'Amazon', logo: amazonLogo, rating: 5, review: 'Maecenas convallis non sapien in commodo. Nulla semper pulvinar luctus. Proin luctus.' },
-    { company: 'Spotify', logo: spotifyLogo, rating: 5, review: 'Maecenas convallis non sapien in commodo. Nulla semper pulvinar luctus. Proin luctus.' }
+    { company: 'Bcl', logo: bclLogo, rating: 5, review: '"Fastra has transformed how we manage our business! From inventory to payroll, everything is now seamless and efficient”. ' },
+    { company: 'Alm', logo: almLogo, rating: 5, review: 'Switching to Fastra was the best decision we made this year. The software is user-friendly, and insightful.' },
+    { company: 'Tsc', logo: tscLogo, rating: 5, review: 'With Fastra, tracking our processes has become so much easier. We’ve saved time and significantly reduced errors in our system.' }
   ];
 
   return (
-    <Container className="text-center rating" id='customer'>
-      <h2>Customers have consistently rated
-      <br />Around 4.7/5 stars</h2>
+    <Container className="text-center my-5 rating" id='customer'>
+      <h2>Customers have consistently rated Around 4.7/5 stars</h2>
       <Row>
         {reviews.map((review, index) => (
           <Col key={index} md={4} className="d-flex justify-content-center mb-4">
