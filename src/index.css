@@ -241,10 +241,8 @@ body{
 }
 
 .demo {
-  
   width: 24%;
-  height: 270px;
-  
+  height: 230px;
   border-radius: 18px;
   padding: 34px 24px;
   position: relative;
@@ -252,6 +250,20 @@ body{
 }
 .demo2 {
   background-color: #E43E2B;
+}
+
+.demo2::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30%;
+  width: 30.2%;
+  height: 70px;
+  border-top: 1px solid #4F4F4F;
+  border-left: 0px solid #4F4F4F;
+  border-right: 0px solid #4F4F4F;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 .demo svg {
   position: absolute;
@@ -262,13 +274,13 @@ body{
 .demo2::after {
   content: "";
   position: absolute;
-  bottom: -25.8%;
+  bottom: -29.99%;
   left: 50%;
   width: 100%;
   height: 70px;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-bottom: 1px solid #4F4F4F;
+  border-left: 1px solid #4F4F4F;
+  border-right: 1px solid #4F4F4F;
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
   transition: background-color 0.3s ease-in-out;
@@ -277,19 +289,17 @@ body{
 .subscribe {
   background-color: #3B7DED;
   position: relative;
-
-
 }
 .subscribe::before {
   content: "";
   position: absolute;
-  top: -25.8%;
+  top: -29.99%;
   left: 50%;
   width: 100%;
   height: 70px;
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-top: 1px solid #4F4F4F;
+  border-left: 1px solid #4F4F4F;
+  border-right: 1px solid #4F4F4F;
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
 }
@@ -301,6 +311,20 @@ body{
 .access {
   background-color: #2BA24C;
 
+}
+
+.access::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -30%;
+  width: 30.2%;
+  height: 70px;
+  border-top: 1px solid #4F4F4F;
+  border-left: 0px solid #4F4F4F;
+  border-right: 0px solid #4F4F4F;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 .why-us h2 {
   font-size: 40px;
@@ -363,11 +387,10 @@ body{
 /* Dashboard area styling */
 .dashboard {
   background: linear-gradient(#09285D, #020A17);
-  height: 70vh;
+  height: 80vh;
   border-radius: 28px;
   margin-top: 100px;
   margin-bottom: 100px;
-
 }
 
 .dashboard img {
@@ -471,7 +494,7 @@ footer .social-icons .fa {
   min-height: 75vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-gap: 3rem;
+  gap: 3rem;
   padding: 6rem 10rem;
 
 }
@@ -545,34 +568,62 @@ gap: 3rem;
 }
 
 
-@media screen and (max-width: 1366px){ 
+@media screen and (max-width: 481px){ 
 
-  .productPop {
-    width: 50%;
-    background: #fff;
-    padding: 2rem 1.5rem;
-    padding-right: 2rem;
-    row-gap: 1.7rem;
-    column-gap: 3rem;
-    box-shadow: 0 2px 23px rgba(0,0,0, 0.2);
+.productPop {
+  width: 120%;
+  background-image: url(./assets/back.png);
+  display: flex;
+  flex-direction: column;
+  right: 1%;
+  top: 0; 
+  padding: 2rem 1.5rem;
+  padding-right: 1rem;
+  row-gap: 1.7rem;
+  column-gap: 3rem;
+  box-shadow: 0 2px 23px rgba(0,0,0, 0.2);
 }
 
 .productPop .box2 div h2 {
   font-size: 1.2rem;
 }
+
+.productPop::before {
+  content: '';
+  position: absolute;
+  top: -2rem;
+  left: 3rem;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 0 solid transparent;
+  border-bottom: 0 solid #fff;
+}
 .gridPopUp {
-  width: 85%;
+  width: 80%;
   background: #fff;
-  min-height: 75vh;
+  /* min-height: 75vh; */
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  padding: 4rem 6rem;
+  grid-template-columns: 1fr;
+  gap: 0.2rem;
+  right: 30%;
+  padding: 2rem 2rem;
 }
 
-.hero2 {
-  height: 85vh;
+.gridPopUp .box, .gridPopUp .box1 {
+  display: flex;
+  background-image: url(./assets/back.png);
+  border-radius: 0.625rem;
+  padding: 1rem 1rem;
+  gap: 2rem;
 }
+.p-5 {
+  padding: 2rem!important;
+}
+
+/* .hero2 {
+  height: 85vh;
+} */
 /* .inventWhyUs .whyusPt1 {
   padding: 8rem 6rem 8rem 6rem;
 } */
@@ -612,16 +663,37 @@ gap: 3rem;
 .customize::after, .demo2::after {
   content: "";
   position: absolute;
-  bottom: 0%;
+  /* bottom: 2%; */
   left: 100%;
   width: 10%;
-  height: 200px;
-  border-bottom: 0px solid black;
-  border-left: 0px solid black;
-  border-right: 1px solid black;
-  border-top: 1px solid black;
+  height: 270px;
+  border-bottom: 0px solid #4F4F4F;
+  border-left: 0px solid #4F4F4F;
+  border-right: 1px solid #4F4F4F;
+  border-top: 1px solid #4F4F4F;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  transition: background-color 0.3s ease-in-out;
+}
+
+.subscribe::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: -10%;
+  width: 10%;
+  height: 220px;
+  border-top: 1px solid #4F4F4F;
+  border-left: 1px solid #4F4F4F;
+  border-right: 0px solid #4F4F4F;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.demo2::before {
+  display: none;
+}
+
+.access::after {
+  display: none;
 }
 }

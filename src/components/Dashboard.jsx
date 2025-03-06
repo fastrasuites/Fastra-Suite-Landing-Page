@@ -19,6 +19,7 @@ const DashboardSection = () => {
             alt="Dashboard" 
             className="position-absolute img-fluid" 
             style={{ top: '10%', right: 0, bottom: 0 }}
+            
           />
         </Col>
       </Row>

@@ -19,8 +19,8 @@ const Featured = () => {
         <Col md={6} className="d-flex1 flex-column align-items-center">
           {featured.map((item, index) => (
             <Card key={index} className="p-2 mb-3 card-box">
-              <Row className="align-items-center">
-                  <img src={item.img} alt={item.altText} className="img-fluid" />
+              <Row className="align-items-center" >
+                  <img src={item.img} alt={item.altText} className="graph img-fluid" />
                 
               </Row>
             </Card>
