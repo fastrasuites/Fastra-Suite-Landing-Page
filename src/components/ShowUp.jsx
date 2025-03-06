@@ -7,7 +7,7 @@ const PopUp = ({setShowPopUp, showPopUp}) => {
     return (
         <div className={` ${showPopUp ? 'pop' : 'hidden'}`} onClick={() => setShowPopUp(prevState => !prevState)}>
             <div className="gridPopUp" onClick={(e) => e.stopPropagation()}>
-                
+                 <span className={`mb-pop ${showPopUp ? 'mb-hid' : ''}`} onClick={() => setShowPopUp(prevState => !prevState)}>BACK</span>
                 <Link to='/inventory'>
                 <div className="box1">
                     <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,11 +31,11 @@ const PopUp = ({setShowPopUp, showPopUp}) => {
                     </svg>
                     <div>
                         <h4>
-                        Inventory Management
+                        Inventory Management <span className="arrow-span"><i className='bx bx-right-arrow-alt'></i></span>
                         </h4>
                         <span>Tracking, controlling, optimizing stock for efficiency.</span>
                     </div>
-                    <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="aroow" width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.625 13.75C20.625 13.75 34.375 23.8766 34.375 27.5C34.375 31.1236 20.625 41.25 20.625 41.25" stroke="#353535" stroke-width="3.4375" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
 
@@ -59,11 +59,11 @@ const PopUp = ({setShowPopUp, showPopUp}) => {
 
                     <div>
                         <h4>
-                        Project Costing
+                        Project Costing <span className="arrow-span"><i className='bx bx-right-arrow-alt blu'></i></span>
                         </h4>
                         <span>budget-focused, resource-sensitive, and outcome-oriented</span>
                     </div>
-                    <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="aroow" width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.625 13.75C20.625 13.75 34.375 23.8766 34.375 27.5C34.375 31.1236 20.625 41.25 20.625 41.25" stroke="currentColor" stroke-width="3.4375" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
 
@@ -91,11 +91,11 @@ const PopUp = ({setShowPopUp, showPopUp}) => {
 
                     <div>
                         <h4>
-                        CRM
+                        CRM <span className="arrow-span"><i className='bx bx-right-arrow-alt blu'></i></span>
                         </h4>
                         <span>Customer-centric, relationship-building, and data-driven.</span>
                     </div>
-                    <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg  className="aroow" width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.625 13.75C20.625 13.75 34.375 23.8766 34.375 27.5C34.375 31.1236 20.625 41.25 20.625 41.25" stroke="currentColor" stroke-width="3.4375" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
 
@@ -112,11 +112,11 @@ const PopUp = ({setShowPopUp, showPopUp}) => {
 
                     <div>
                         <h4>
-                        Finance
+                        Finance <span className="arrow-span"><i className='bx bx-right-arrow-alt blu'></i></span>
                         </h4>
                         <span>Numbers-driven, value-oriented, and risk-aware.</span>
                     </div>
-                    <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="aroow" width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.625 13.75C20.625 13.75 34.375 23.8766 34.375 27.5C34.375 31.1236 20.625 41.25 20.625 41.25" stroke="currentColor" stroke-width="3.4375" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
 
@@ -159,11 +159,11 @@ const PopUp = ({setShowPopUp, showPopUp}) => {
 
                     <div>
                         <h4>
-                        HRM
+                        HRM <span className="arrow-span"><i className='bx bx-right-arrow-alt blu'></i></span>
                         </h4>
                         <span>People-focused, talent-driven, and strategic.</span>
                     </div>
-                    <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="aroow" width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.625 13.75C20.625 13.75 34.375 23.8766 34.375 27.5C34.375 31.1236 20.625 41.25 20.625 41.25" stroke="currentColor" stroke-width="3.4375" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
 
