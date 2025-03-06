@@ -1,8 +1,4 @@
 @media (max-width: 480px) {
-  .logo {
-    height: 34px; 
-    width: auto;
-  }
   .navbar-nav .nav-link {
     font-size: 17.5px;
     margin-left: 10px;
@@ -66,14 +62,6 @@
         margin-top: 20px;
       }
 
-      .d-flex-Why {
-        display: none;
-      }
-
-      .customerimg img {
-        display: none;
-      }
-
       .d-flex-robust {
         padding-left: 31px;
         padding-right: 28px;
@@ -100,7 +88,7 @@
           font-weight: 400;
         }
         .dashboard {
-          height: 40vh;
+          height: 65vh;
         }
         .dashboard img {
           /* width: 100%;
@@ -117,7 +105,8 @@
         }
         .dashboard .btn{
           padding: 12px;
-          width: 80%;
+          width: 60%;
+          height: 55px;
         }
         .copyright {
           float: left;

@@ -15,12 +15,11 @@ const HeroSection = () => {
         backgroundRepeat: 'no-repeat',
         backgroundColor: '#3C3939',
         backgroundBlendMode: 'overlay',
-        width: '100%',
-    marginBottom:  '18rem'
+        width: '100%'
       }}
     >
       <NavForInventory  />
-      <h1 style={{marginTop: '4rem',color: '#F4F5F7', fontSize: '3rem', width: '70%', textAlign: 'center', fontWeight: '700'}}>
+      <h1 style={{marginTop: '4rem',color: '#F4F5F7', width: '70%', textAlign: 'center', fontWeight: '700'}}>
         STREAMLINE YOUR INVENTORY WITH <br /> THE ALL-IN-ONE INVENTORY <br />MANAGEMENT SOFTWARE!
         </h1>
         <div style={{width: '45%', display: 'flex', justifyContent: 'right' }}>
