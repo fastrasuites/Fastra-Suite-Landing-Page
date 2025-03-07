@@ -543,6 +543,10 @@ header .navBarsect1  .links2  li a {
     .bx {
         display: flex;
     }
+
+    .bx-right-arrow-alt {
+       color: #F2F2F7;
+    }
   }
 
   @media screen and (max-width: 481px) {
