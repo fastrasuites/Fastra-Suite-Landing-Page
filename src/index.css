@@ -211,6 +211,10 @@ body{
   margin-top: 50px;
 }
 
+/* .howItWorks p {
+  margin-bottom: 120px;
+} */
+
 .howItWorksCard {
   display: flex;
   align-items: center;
@@ -403,12 +407,6 @@ body{
   padding: 12px;
   width: 40%;
 }
-
-.dashboard .btn a {
-  color: #4F4F4F;
-}
-
-
 /* Footer styling start here */
 footer {
   background-color: #05204a;
@@ -500,7 +498,9 @@ footer .social-icons .fa {
   padding: 6rem 10rem;
 
 }
-
+.mb-pop {
+  display: none;
+}
 .gridPopUp a {
   text-decoration: none;
 }
@@ -537,6 +537,9 @@ footer .social-icons .fa {
 
 .box1 div h4 {
   color: #353535;
+}
+.arrow-span {
+  display: none;
 }
 
 #customer {
@@ -607,17 +610,22 @@ footer .social-icons .fa {
   /* min-height: 75vh; */
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.2rem;
+  gap: 0rem;
   right: 30%;
-  padding: 2rem 2rem;
+  padding: 2rem 1rem;
+  background-image: url(./assets/back.png);
 }
 
 .gridPopUp .box, .gridPopUp .box1 {
   display: flex;
-  background-image: url(./assets/back.png);
   border-radius: 0.625rem;
-  padding: 1rem 1rem;
-  gap: 2rem;
+  padding: 1rem 0rem;
+  gap: 1rem;
+  background: inherit;
+}
+.gridPopUp .box .aroow,
+.gridPopUp a .box1 .aroow {
+  display: none;
 }
 .p-5 {
   padding: 2rem!important;
@@ -637,6 +645,9 @@ footer .social-icons .fa {
 .box div h4, .box1 div h4 {
   font-weight: 700;
   font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+
 }
 #customer {
   margin-top: 8rem;
@@ -669,10 +680,10 @@ footer .social-icons .fa {
   left: 100%;
   width: 10%;
   height: 270px;
-  border-bottom: 0px solid #4F4F4F;
-  border-left: 0px solid #4F4F4F;
-  border-right: 1px solid #4F4F4F;
-  border-top: 1px solid #4F4F4F;
+  border-bottom: 0px solid #c0bebe;
+  border-left: 0px solid #c0bebe;
+  border-right: 1px solid #c0bebe;
+  border-top: 1px solid #c0bebe;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
@@ -684,9 +695,9 @@ footer .social-icons .fa {
   left: -10%;
   width: 10%;
   height: 220px;
-  border-top: 1px solid #4F4F4F;
-  border-left: 1px solid #4F4F4F;
-  border-right: 0px solid #4F4F4F;
+  border-top: 1px solid #c0bebe;
+  border-left: 1px solid #c0bebe;
+  border-right: 0px solid #c0bebe ;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
@@ -697,5 +708,27 @@ footer .social-icons .fa {
 
 .access::after {
   display: none;
+}
+
+.mb-pop.mb-hid {
+  display: flex;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+
+.arrow-span  {
+  display: flex;
+  color:#3B7DED;
+  font-size: 1rem;
+  padding-left: 0.4rem
+}
+
+.arrow-span i {
+  color:#3B7DED;
+  font-size: 1rem;
+}
+.arrow-span .blu {
+  color: rgb(190, 189, 189)
 }
 }
