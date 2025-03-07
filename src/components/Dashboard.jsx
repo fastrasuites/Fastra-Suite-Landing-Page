@@ -11,7 +11,7 @@ const DashboardSection = () => {
           <h1 className="display-4">The best Enterprise<br /> Business Management<br /> Software at your fingertips.</h1>
           <p className="lead">Streamline Your Operations and Drive Growth.<br /> Learn More Now</p>
           <Button variant="light" className="mt-3 btn">
-          <Link style={{textDecoration: 'none', color: '#020A17'}} to="https://app.fastrasuite.com/">Get started for free! <i className='bx bx-right-arrow-alt' ></i></Link></Button>
+          <Link style={{textDecoration: 'none'}} to="https://app.fastrasuite.com/">Get started for free! <i className='bx bx-right-arrow-alt' ></i></Link></Button>
         </Col>
         <Col md={6} className="position-relative">
           <img 
