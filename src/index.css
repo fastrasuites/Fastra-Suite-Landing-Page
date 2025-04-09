@@ -152,13 +152,14 @@ body{
   top: 90%;
   bottom: 0;
   width: 100%;
+  margin-top: 2.5rem;
   max-width: 1102px;
   max-height: 784px;
   z-index: 1;
 }
 /* rating style start here */
 .rating{
-  padding-top: 50%;
+  padding-top: 40%;
 }
 .rating h2 {
   font-size: 50px;
@@ -333,6 +334,7 @@ body{
 .why-us p {
   color: #fff;
   font-weight: 400;
+  font-size: 18px;
 }
 /* Pricing */
 .pricing-heading {
@@ -491,13 +493,16 @@ footer .social-icons .fa {
 .gridPopUp {
   width: 85%;
   background: #fff;
-  min-height: 75vh;
+  min-height: 55vh;
+  margin-top: 8.5rem;
+  border-radius: 16px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
-  padding: 6rem 10rem;
-
+  padding: 4rem 8rem;
+  box-shadow: 0 -6px 12px -6px rgba(0, 0, 0, 0.2);
 }
+
 .mb-pop {
   display: none;
 }
@@ -512,6 +517,10 @@ footer .social-icons .fa {
   border-radius: 0.625rem;
   padding: 2rem 1rem;
   gap: 2rem;
+}
+
+.gridPopUp .box {
+  height: 175px;
 }
 
 .gridPopUp .box1 {

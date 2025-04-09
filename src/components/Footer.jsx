@@ -21,15 +21,15 @@ const Footer = () => {
           <Col md={3}>
             <h5>Quick Links</h5>
             <ul className="list-unstyled">
-              <li>Product</li>
-              <li>Information</li>
+              <li>Products</li>
+              <li>Inventory Management</li>
+              <li>Project Costing</li>
             </ul>
           </Col>
           <Col md={3}>
             <h5></h5>
             <ul className="list-unstyled">
               <li>Company</li>
-              <li>FastraSuites</li>
             </ul>
           </Col>
           <Col md={3}>
