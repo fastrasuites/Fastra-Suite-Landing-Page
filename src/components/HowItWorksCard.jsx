@@ -143,7 +143,7 @@ const HowItWorksCard = () => {
                     </defs>
                     </svg>
                     <h3>2. Subscribe to Fastra Suite</h3>
-                    <p>Unlock seamless business management—subscribe to Fastra Suite today!</p>
+                    <p>Unlock seamless project cost management—subscribe to Fastra Suite today!</p>
                 </div>
                 <div className='demo customize'>
 
@@ -212,7 +212,7 @@ const HowItWorksCard = () => {
                     </defs>
                     </svg>
                     <h3>3. Set up your customizable account</h3>
-                    <p>Experience Fastra Suite in action—book your demo now!</p>
+                    <p>Experience Fastra Suite in your own style and taste—start now!</p>
                 </div>
                 <div className='demo access'>
 

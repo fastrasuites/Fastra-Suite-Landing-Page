@@ -7,12 +7,12 @@ import iconImg from '../assets/icon.png';
 const WhyUs = () => {
   const featured = [
     {
-      title: 'Scale Without Limits: Automate, Integrate, and Secure Your Enterprise Operations',
-      text: 'The all-in-one solution for your business',
-      text2: 'Business management, simplified',
-      text3: 'Your business. Elevated',
-      text4: 'Unleash the power of your business',
-      text5: 'From chaos to clarity. Streamline your operations',
+      title: 'Scale Without Limits: Automate, Integrate, and Secure Your Project Operations',
+      text: 'Estimate costs precisely before project execution begins.',
+      text2: 'Tracks expenses in real-time to prevent overspending.',
+      text3: 'Informed insights from cost data lead to smarter strategies.',
+      text4: 'Identifies cost-saving opportunities and reduces waste.',
+      text5: 'Identifies cost-saving opportunities and reduces waste.',
       altText: 'Customerimg',
       img: whyUsImg,
       icon: iconImg,
